@@ -1,0 +1,114 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7fc;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .calculator {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+    margin: 20px;
+    transition: 0.3s;
+  }
+  
+  .calculator:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .item-form input,
+  .item-form select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: #f5f5f5;
+  }
+  
+  .item-form input:focus,
+  .item-form select:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  button[type="submit"],
+  #calculateBtn,
+  #resetBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover,
+  #calculateBtn:hover,
+  #resetBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007bff;
+    font-size: 20px;
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  #data-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  #data-table th,
+  #data-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  #data-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Style for the table body */
+  #table-body tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }
